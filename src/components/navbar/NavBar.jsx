@@ -1,6 +1,6 @@
 
 import logo from "../../assets/logo.png";
-const NavBar=() =>{
+const NavBar=({availableBalance}) =>{
 
     return (
        <div>
@@ -11,7 +11,7 @@ const NavBar=() =>{
         </a>
       </div>
       <div className="flex-items-center">
-        <span className='mr-1'> 600000000 </span>
+        <span className='mr-1'> {availableBalance} </span>
         <span className='mr-1'> Coin </span>
       </div>
     </div>    
