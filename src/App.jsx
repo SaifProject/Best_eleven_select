@@ -1,4 +1,5 @@
 import "./App.css";
+ import { ToastContainer, toast } from 'react-toastify';
 import { Suspense, use, useState } from "react";
 import AvailablePlayer from "./components/AvailablePlayers/AvailablePlayer";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
@@ -67,6 +68,7 @@ const removePlayer=(p) => {
         <SelectedPlayers purchasePlayer={purchasePlayer}
         removePlayer={removePlayer}></SelectedPlayers>
       )}
+      <ToastContainer></ToastContainer>
     </>
   );
 }
