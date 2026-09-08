@@ -29,10 +29,8 @@ const PlayerCard = ({
   return (
     <div className="card bg-base-100 shadow-s -4">
       <figure>
-        <img
-          src={player.image}
-          alt="Shoes"
-          className="w-full ho[300 px] object-cover"
+        <img src={player.image} alt=""
+          className="w-full h-[300px] object-cover object-top"
         />
       </figure>
       <div className="mt-4">
